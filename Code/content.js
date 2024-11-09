@@ -2,6 +2,6 @@
 if (window.location.href.includes("luogu.com.cn/problem/solution") || 
     (window.location.href.includes("/p/") && window.location.href.includes("/solution"))) {
     
-    // 获取当前标签页的 ID
-    chrome.runtime.sendMessage({action: "redirectToMessagePage"});
+    // 使用 chrome.tabs.update 重定向到提示页面
+    chrome.runtime.sendMessage({ action: "redirectToMessagePage" });
 }
