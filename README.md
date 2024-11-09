@@ -23,17 +23,6 @@
 
 - 当您访问洛谷或 Hydro 的题解页面时，插件会自动重定向到提示页面。
 - 提示页面将显示您已经打开题解的次数。
-  
-## 文件结构
-
-/SolutionKiller
-│
-├── manifest.json # 扩展程序的配置文件
-├── background.js # 后台脚本，处理消息和存储
-├── content.js # 内容脚本，检测题解页面
-├── popup.html # 弹出页面，显示插件信息
-├── popup.js # 弹出页面的脚本
-└── message.html # 提示页面，显示提示信息和打开次数
 
 
 ## 贡献
