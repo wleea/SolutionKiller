@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>题解杀手</title>
+    <title>自动退出题解</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,11 +28,25 @@
             margin-bottom: 20px;
             cursor: pointer; /* 鼠标悬停时显示为手型 */
         }
+
+        a {
+            display: inline-block; /* 保持为行内块元素 */
+            margin-top: 10px;
+            color: #4a90e2; /* 超链接颜色 */
+            text-decoration: none; /* 去掉下划线 */
+            font-size: 14px;
+            text-align: left; /* 超链接左对齐 */
+        }
+
+        a:hover {
+            text-decoration: underline; /* 悬停时显示下划线 */
+        }
     </style>
 </head>
 <body>
-    <h1 id="title">题解杀手插件</h1>
-    <p id="description">专为每一个OIer打造。当一个OIer不小心点到题解时自动退出。</p>
-    <script src="popup.js"></script> <!-- 引入外部 JavaScript 文件 -->
-</body>
-</html>
+    <h1 id="title">自动退出题解插件</h1>
+    <p id="description">该插件会在访问题解时自动退出并显示提示信息。</p>
+    <div style="text-align: left;"> <!-- 使用 div 包裹超链接并左对齐 -->
+        <a href="https://github.com/wleea/SolutionKiller" target="_blank">gitHub</a>
+    </div>
+    <script src="popup.js"></script> <!--
