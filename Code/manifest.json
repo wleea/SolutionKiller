@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "题解杀手",
     "version": "1.0",
-    "description": "专为OI玩家设计，自动退出题解。",
+    "description": "专为每一个OIer打造。当一个OIer不小心点到题解时自动退出",
     "permissions": ["tabs", "activeTab", "storage"],
     "background": {
         "service_worker": "background.js"
